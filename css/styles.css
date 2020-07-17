@@ -14,6 +14,21 @@ body {
     text-decoration: none;
     font-weight: bold; }
 
+#galeria {
+  width: 400px;
+  margin: auto;
+  border: 3px solid white;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px; }
+  #galeria h3 {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px black; }
+  @media screen and (max-width: 480px) {
+    #galeria {
+      width: 100%; } }
+
 .container {
   width: 80%;
   margin: auto; }
