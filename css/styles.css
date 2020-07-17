@@ -4,8 +4,11 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
-  background-color: #eee;
+  background-color: #fff;
   font-family: 'Montserrat', sans-serif; }
   body p {
     line-height: 1.5em; }
@@ -13,25 +16,53 @@ body {
     color: #383838;
     text-decoration: none;
     font-weight: bold; }
+    body a:hover {
+      color: inherit; }
 
-#galeria {
-  width: 400px;
-  margin: auto;
-  border: 3px solid white;
-  border-radius: 3px;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  margin-bottom: 30px; }
-  #galeria h3 {
+#barra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #383838;
+  color: whitesmoke;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
+  #barra h1 {
+    font-family: 'Courgette';
     font-size: 1.2em;
-    text-shadow: 2px 2px 2px black; }
+    border-bottom: none;
+    letter-spacing: 0;
+    margin: 0; }
+  #barra h3 {
+    font-size: 0.8em;
+    margin: 0 0 0 1em;
+    font-family: monospace;
+    display: inline-block; }
+  #barra .fa-envelope {
+    font-size: 1em;
+    font-weight: lighter;
+    opacity: 0.7; }
+  #barra a {
+    color: whitesmoke; }
   @media screen and (max-width: 480px) {
-    #galeria {
-      width: 100%; } }
+    #barra {
+      padding: 5px; }
+      #barra .fa-envelope {
+        display: none; } }
 
 .container {
   width: 80%;
-  margin: auto; }
+  margin: auto;
+  top: 40px;
+  position: relative; }
   @media screen and (max-width: 480px) {
     .container {
       width: 90%;
@@ -44,10 +75,15 @@ header {
   border-bottom: 2px solid #707070;
   margin-bottom: 20px; }
   header h1 {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 20px;
-    font-variant: small-caps;
-    letter-spacing: 2px; }
+    font-family: 'Courgette', sans-serif;
+    font-size: 3em;
+    padding: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #707070; }
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 2em; } }
   header #contacto {
     font-style: italic;
     color: #333;
@@ -56,6 +92,40 @@ header {
     color: #205294; }
   header .fab {
     color: #d1a101; }
+
+.ofertas {
+  border: 1px solid black;
+  width: 60%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  padding: 0.5em; }
+  @media screen and (max-width: 480px) {
+    .ofertas {
+      width: 100%; } }
+
+#galeria {
+  width: 400px;
+  margin: auto;
+  border: 3px solid white;
+  border-radius: 3px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px; }
+  #galeria h3 {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Courgette', serif; }
+  @media screen and (max-width: 480px) {
+    #galeria {
+      width: 100%; } }
+  #galeria a {
+    color: white;
+    text-decoration: none; }
+    #galeria a:hover {
+      text-decoration: underline; }
 
 #content h2 {
   display: inline-block;
@@ -95,9 +165,25 @@ header {
   .articulo .datos {
     font-size: 1.2em;
     margin-left: 2em;
-    margin-top: 2em; }
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
     @media screen and (max-width: 480px) {
       .articulo .datos {
         width: 100%;
         margin-left: 0; } }
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  button:hover a {
+    text-decoration: none;
+    color: whitesmoke; }
+  button a {
+    text-decoration: none;
+    font-weight: lighter; }
 /*# sourceMappingURL=styles.css.map */

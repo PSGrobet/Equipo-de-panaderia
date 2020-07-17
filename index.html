@@ -6,19 +6,30 @@
     <title>Equipo de panadería en venta</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a684445abf.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
+    <div id="barra">
+        <div>
+            <h1>Equipo de panadería</h1>
+        </div>
+        <div>
+            <i class="far fa-envelope"></i><h3> <a href="mailto: elgrobet@gmail.com">elgrobet@gmail.com</a></h3>
+        </div>
+    </div>
     <div class="container">
         <header>
             <div id="header">
                 <h1>Equipo de panadería en venta</h1>
                 <p>Pongo este equipo en venta ya que tuve que cerrar mi negocio de pan artesanal <a href="http://lamitaddelcamino.com/acerca-de-mi.html" target="_blank">La Mitad del Camino</a>. Espero que le pueda servir a alguien más para iniciar o hacer crecer el suyo. Me ubico en la Ciudad de México, sur, pero podemos acordar el envío a cualquier parte de México.</p>
                 <br/>
-                <p><span class="far fa-hand-point-right"></span> Precio especial si decides comprar el lote completo.</p>
-                <p><span class="far fa-hand-point-right"></span> Acepto Bitcoin <i class="fab fa-bitcoin"></i>, 15% de descuento.</p>
+                <div class="ofertas">
+                    <p><span class="far fa-hand-point-right"></span> Precio especial si decides comprar el lote completo.</p>
+                    <p><span class="far fa-hand-point-right"></span> Acepto Bitcoin <i class="fab fa-bitcoin"></i>, 15% de descuento.</p>
+                </div>
             </div>
             <div id="contacto">
                 <p>Si te interesa algún artículo o varios, por favor escríbeme a: elgrobet[@]gmail.com</p>
@@ -35,34 +46,34 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                   </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="2000">
+                    <div class="carousel-item active" data-interval="3000">
                         <img src="images/horno-ch.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-sm-block">
-                            <h3>Horno La Tahona de dos charolas</h3>
+                            <a href="#horno"><h3>Horno La Tahona de dos charolas</h3></a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="images/mesa-ch.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-sm-block">
-                            <h3>Mesa de acero inoxidable</h3>
+                            <a href="#mesa"><h3>Mesa de acero inoxidable</h3></a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="images/enfriador-ch.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-sm-block">
-                            <h3>Exhibidor de madera</h3>
+                            <a href="#enfriador"><h3>Exhibidor de madera</h3></a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="images/estufa-ch.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-sm-block">
-                            <h3>Estufa Mabe de seis hornillas</h3>
+                            <a href="#estufa"><h3>Estufa Mabe de seis hornillas</h3></a>
                         </div>
                     </div>
-                    <div class="carousel-item" data-interval="2000">
+                    <div class="carousel-item" data-interval="3000">
                         <img src="images/congelador-ch.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-sm-block">
-                            <h3>Congelador Haier de 1.3 ft<sup>3</sup> interior</h3>
+                            <a href="#congelador"><h3>Congelador Haier de 1.3 ft<sup>3</sup> interior</h3></a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +104,7 @@
             <article class="articulo" id="enfriador">
                 <div class="image"><img src="images/enfriador-ch.jpg" alt=""></div>
                 <div class="datos">
-                    <p><strong>Mueble enfriador</strong> de madera con tres repisas, muy amplio, sirve para enfriar pan o bien como repisas para equipo o producto.</p>
+                    <p><strong>Exhibidor</strong> de madera con tres repisas, muy amplio, sirve para enfriar pan o bien como repisas para equipo o producto.</p>
                     <p><strong>Medidas:</strong> 140cm ancho x 180cm alto x 50cm fondo.</p>
                     <p><strong>Precio:</strong> $2,000.</p>
                     <p><strong>Pieza única.</strong></p>
@@ -176,6 +187,8 @@
                     <p><strong>Pieza única.</strong></p>
                 </div>
             </article>
+
+            <button type="button" class="btn-outline-secondary"><a href="#galeria">Arriba</a></button>
         </div>
         <hr/>
         

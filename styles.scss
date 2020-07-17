@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #eee;
+    background-color: #fff;
     font-family: 'Montserrat', sans-serif;
 
     p {
@@ -16,30 +20,63 @@ body {
         color: #383838;
         text-decoration: none;
         font-weight: bold;
+
+        &:hover {
+            color: inherit;
+        }
     }
 }
 
-#galeria {
-    width: 400px ;
-    margin: auto ;
-    border: 3px solid white ;
-    border-radius: 3px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-    margin-bottom: 30px;
+#barra {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #383838;
+    color: whitesmoke;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    h1 {
+        font-family: 'Courgette';
+        font-size: 1.2em;
+        border-bottom: none;
+        letter-spacing: 0;
+        margin: 0;
+    }
 
     h3 {
-        font-size: 1.2em;
-        text-shadow: 2px 2px 2px rgba(0,0,0,1);
+        font-size: 0.8em;
+        margin: 0 0 0 1em;
+        font-family: monospace;
+        display: inline-block;
+    }
+
+    .fa-envelope {
+        font-size: 1em;
+        font-weight: lighter;
+        opacity: 0.7;
+    }
+
+    a{
+        color: whitesmoke;
     }
 
     @media screen and (max-width: 480px) {
-        width: 100%;
+        padding: 5px;
+
+        .fa-envelope {
+            display: none;
+        }
     }
 }
 
 .container {
     width: 80%;
     margin: auto;
+    top: 40px;
+    position:relative;
 
     @media screen and (max-width: 480px) {
         width: 90%;
@@ -55,10 +92,16 @@ header {
     margin-bottom: 20px;
 
     h1 {
-        font-family: 'Roboto', sans-serif;
-        margin-bottom: 20px;
-        font-variant: small-caps;
-        letter-spacing: 2px;
+        font-family: 'Courgette', sans-serif;
+        font-size: 3em;
+        padding: 10px;
+        margin-bottom: 30px;
+        letter-spacing: 4px;
+        border-bottom: 1px solid #707070;
+
+        @media screen and (max-width: 480px) {
+            font-size: 2em;
+        }
     }
 
     #contacto {
@@ -74,6 +117,50 @@ header {
     .fab {
         color: #d1a101
     }
+}
+
+.ofertas{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    padding: 0.5em;
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+}
+
+#galeria {
+    width: 400px ;
+    margin: auto ;
+    border: 3px solid white ;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 1.2em;
+        text-shadow: 2px 2px 2px rgba(0,0,0,1);
+        font-family: 'Courgette', serif;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
 }
 
 #content h2 {
@@ -114,7 +201,7 @@ header {
     .datos {
         font-size: 1.2em;
         margin-left: 2em;
-        margin-top: 2em;
+        align-self: center;
 
         @media screen and (max-width: 480px) {
             width: 100%;
@@ -122,3 +209,23 @@ header {
         }
     }
 }
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 5px;
+    border-radius: 10px;
+    transition: all .5s ease;
+
+    &:hover a {
+            text-decoration: none;
+            color: whitesmoke;
+        }
+
+    a {
+        text-decoration: none;
+        font-weight: lighter;
+    }
+}
+
+
